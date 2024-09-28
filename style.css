@@ -66,13 +66,17 @@ header img{
 }
 .banner .image img{
     position: absolute;
-    width: 600px;
-    height: 600px;
-    /* height: 130%; */
+    /* width: 600px; */
+    /* height: 600px; */
+    height: 130%;
     left: 50%;
     transform: translateX(-50%);
     bottom: 0px;
 }
+
+
+
+
 .grid figure img{
     width: 100%;
 }
