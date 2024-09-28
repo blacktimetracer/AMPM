@@ -1,18 +1,59 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	 	<meta charset="UTF-8">
-		<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> -->
+	
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, maximum-scale=1.0">
-		<title>AM/PM</title>
-		<link rel="stylesheet" href="style.css">
+		
+		{squarespace.headers}
 
 	</head>
-	<body>
-	<!-- <div id="pre-loader"></div> -->
+	<body id="{squarespace.page-id}" class="{squarespace.page-classes}">
 	
-		<main>
-        <header>
+		<div id="canvasWrapper">
+			<div id="canvas">
+			
+				<div id="pageHeaderWrapper">
+					<div id="pageHeader">
+					
+						<header id="header">
+							
+							{.section website}
+							<div id="siteTitle">
+								<h1 class="logo">
+									<a href="/">
+									{.if logoImageUrl}
+										<img src="{logoImageUrl}?format=300w" alt="{siteTitle}" />
+									{.or}
+										{siteTitle}
+									{.end}
+									</a>
+								</h1>
+								{.section siteTagLine}
+									<p class="logo-subtitle">{@}</p>
+								{.end}
+							</div>
+							{.end}
+							
+							<squarespace:navigation navigationId="mainNav" template="navigation" role="navigation" />
+							
+						</header>
+						
+					</div>
+				</div><!-- pageHeaderWrapper -->
+				
+				<div id="pageBodyWrapper">
+					<div id="pageBody">
+						
+						<div id="contentWrapper">
+							<div id="content">
+					  			<section id="page" class="hfeed" role="main">
+
+
+
+
+								
+								<header>
             <img src="images/5.png" alt="">
             <img src="images/6.png" alt="">
         </header>
@@ -91,22 +132,37 @@
         </section>
 
 
-    </main>
-
-
-	<footer>
-        <div class="grid grid-5 content">
-            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero labore numquam explicabo itaque qui, assumenda temporibus aspernatur ex quae corrupti, ipsa quod esse hic debitis quidem obcaecati aperiam! Incidunt blanditiis facilis a et provident vel aspernatur deleniti sint debitis numquam ducimus recusandae assumenda eligendi explicabo id unde quasi dicta ut cumque, tempore accusamus ipsa similique repellat. Deserunt delectus sint debitis ad sequi laboriosam inventore consequatur nemo neque cum est nostrum eveniet aliquid unde distinctio, omnis sed vitae amet nobis atque.</div>
-            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero labore numquam explicabo itaque qui, assumenda temporibus aspernatur ex quae corrupti, ipsa quod esse hic debitis quidem obcaecati aperiam! Incidunt blanditiis facilis a et provident vel aspernatur deleniti sint debitis numquam ducimus recusandae assumenda eligendi explicabo id unde quasi dicta ut cumque, tempore accusamus ipsa similique repellat. Deserunt delectus sint debitis ad sequi laboriosam inveum est nostrum eveniet aliquid unde distinctio, omnis sed vitae amet nobis atque.</div>
-            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero labore numquam explicabo itaque qui, assumenda temporibus aspernatur ex quae corrupti, ipsa quod esse hic debitis quidem obcaecati aperiam! Incidunt blanditiis facilis a et provident vel aspernatur deleniti sint debitis numquam ducimus recusandae assumenda eligendi explicabo id unde quasi dicta ut cumque, tempore accusamus ipsa similique repellat. Deserunt delectus sint debitis ad sequi laboriosam inventore consequatur nemo neque cum est nos atque.</div>
-            <div>
-                <figure>
-                    <img src="images/8.png" alt="">
-                </figure>
-            </div>
-        </div>
-    </footer>
+   
+									{squarespace.main-content}
+								</section>
+							</div>
+						</div><!-- contentWrapper -->
+					
+						<div id="sidebarWrapper" class="verticalNavigationBarWrapper">
+							<section id="sidebar" class="verticalNavigationBar">
+								<squarespace:block-field id="sidebarBlocks" />
+							</section>
+						</div><!-- sidebarWrapper -->
+						
+					</div>
+				</div><!-- pageBodyWrapper -->
+				
+			    <div id="pageFooterWrapper">
+				    <div id="pageFooter">
+				    
+						<footer id="footer">
+							<squarespace:block-field id="footerBlocks" />
+						</footer>
+						
+				    </div>
+			    </div><!-- pageFooterWrapper -->
+				
+			</div>
+		</div><!-- canvasWrapper -->
 		
 		<div class="clearer" id="bodyClearer"></div>
+  
+		{squarespace.footers}
+		
 	</body>
 </html>
