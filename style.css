@@ -5,6 +5,8 @@
 
 html, body{
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
 }
 /* .smooth-scroll-wrapper{
     position: static;
@@ -13,6 +15,72 @@ html, body{
     left: 0;
     overflow: hidden;
 } */
+
+#floating-gallery-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .gallery-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* width: 100%; */
+    height: 100%;
+    pointer-events: none; /* Allows mouse events to pass through */
+  }
+  
+  .floating-gif {
+    position: absolute;
+    /* width: 150px;
+    height: 150px; */
+    border-radius: 15px;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: transform 0.1s ease-out, opacity 0.3s;
+  }
+  
+  /* Section Content */
+  .section-content {
+    position: relative;
+    z-index: 1; /* Ensures content is above floating GIFs */
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+  }
+  
+  .section-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .section-content p {
+    font-size: 1.2rem;
+  }
+  
+  /* Responsive adjustments */
+  /* @media (max-width: 768px) {
+    .floating-gif {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .section-content h2 {
+      font-size: 2rem;
+    }
+  
+    .section-content p {
+      font-size: 1rem;
+    }
+  } */
+
 body{
     background-color: #000;
     margin: 0;
@@ -40,6 +108,9 @@ header{
 header img{
     height: 40px;
 }
+
+
+
 .banner .content{
     font-family: "Odibee Sans", sans-serif;
     display: flex;

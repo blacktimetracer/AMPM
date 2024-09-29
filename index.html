@@ -24,8 +24,6 @@
                         <br> whatever the F*&K you need!</p>
                 </div>
 
-
-
                 <div class="image">
                     <img src="images/Logo.png" alt="">
                 </div>
@@ -84,10 +82,31 @@
             <div class="autoBLur">AND MORE</div>
         </section>
 
-        <section class="grid grid-3">
-            <script type="text/javascript" src="js/src/app/page.js"></script>
-        </section>
-
+            <section id="floating-gallery-section">
+                <div class="gallery-container">
+                  <img src="images/gifs/5.gif" class="floating-gif" alt="GIF 2" 
+                  data-initial-x="-530" data-initial-y="-380" height="281px" width="500px" data-speed="2.3273152781687383">
+                  <img src="images/gifs/9.gif" class="floating-gif" alt="GIF 3"
+                  data-initial-x="100" data-initial-y="190" height="281px" width="500px" data-speed="2.3273152781687383">
+                  <img src="images/gifs/10.gif" class="floating-gif" alt="GIF 1" 
+                  data-initial-x="150" data-initial-y="-200" height="224px" width="400px" data-speed="1.5816874288561027">
+                  <img src="images/gifs/1.gif" class="floating-gif" alt="GIF 5"
+                  data-initial-x="-150" data-initial-y="50" height="224px" width="400px" data-speed="1.5816874288561027">
+                  <img src="images/gifs/2.gif" class="floating-gif" alt="GIF 7"
+                  data-initial-x="-500" data-initial-y="500" height="169px" width="300px" data-speed="1.4546825552386542" >
+                  <img src="images/gifs/11.gif" class="floating-gif" alt="GIF 8"
+                  data-initial-x="-520" data-initial-y="130" height="169px" width="300px" data-speed="1.4546825552386542" >
+                  <img src="images/gifs/6.gif" class="floating-gif" alt="GIF 4"
+                  data-initial-x="-320" data-initial-y="400" height="113px" width="200px" data-speed="1.0881966581662361">
+                  <img src="images/gifs/4.gif" class="floating-gif" alt="GIF 6"
+                  data-initial-x="350" data-initial-y="150" height="113px" width="200px" data-speed="1.0881966581662361">
+                  <!-- Add more GIFs as needed -->
+                </div>
+                <div class="section-content">
+                  <h2></h2>
+                  <p></p>
+                </div>
+              </section>
 
     </main>
     <footer>
@@ -102,61 +121,6 @@
             </div>
         </div>
     </footer>
-    <!-- </div> -->
-    <script>
-
-        //SMOOTH SCROLLER THAT DID NOT WORK
-        // const body = document.body,
-        // scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0]
-        // ,
-        // height = scrollWrap.getBoundingClientRect().height-1,
-        // speed = 0.04;
-
-        // var offset = 0;
-        // body.style.height = math.floor(height) + "px";
-
-        // function smoothScroll(){
-        //     offset += (window.pageYoffsoet - offset) * speed;
-
-        //     var scroll = "translateY(-" + offset + "px) translateZ(0)";
-        //     scrollWrap.style.transform = scroll;
-        //     callScroll = requestAnimationFrame(smoothScroll);
-        // }
-
-        // smoothScroll();
-
-
-
-        var loader = document.getElementById("pre-loader");
-        window.addEventListener("load", function(){
-
-            // setTimeout(function(){
-            //     loader.style.display = "none";
-            // }, 4000);
-
-// Working fadeout FINALLY DONT FUCKING TOUCH THIS
-
-            setTimeout(function(){
-                loader.style.animation ="fade-out 1s ease";
-            }, 1000);
-
-            setTimeout(function(){
-                loader.style.display = "none";
-            }, 1800);
-        });
-
-
-// THIS IS TRASH BUT IT COULD WORK FOR PRELOADER WITH VARIABLE LENGTH
-        // var myVar;
-
-        // function preloader() {
-        // myVar = setTimeout(showPage, 4000);
-        // }
-
-        // function showPage() {
-        // document.getElementById("pre-loader").style.opacity = 0;
-        // document.getElementById("wrapper").style.opacity = 1;
-        // }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
